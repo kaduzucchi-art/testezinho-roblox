@@ -21,6 +21,16 @@ Não declarar resultados inexistentes: **multiplayer, toque em dispositivo físi
 
 **"Último teste"** neste contexto significa **encerrar a fase de experimentos iniciais** e concentrar as próximas sessões em desenvolvimento, sem impedir os testes de qualidade normais de cada funcionalidade futura.
 
+## Arquivos completos versionados
+
+Além dos scripts Luau, capturas e documentos, os três snapshots `.rbxl` foram enviados à branch `main` do GitHub:
+
+- [Mapa atual com portal + ragdoll](../studio/Place1.rbxl)
+- [Backups anteriores às alterações](../studio/backups/)
+- [Hashes SHA-256 e instruções](../studio/README.md)
+
+As tarefas de planejamento e demonstração **CAR-22, CAR-23 e CAR-25** foram marcadas **Done** no Linear em 22/11/2026 com base na aprovação do usuário e nas evidências do teste isolado. Isso não indica que o jogo inteiro está pronto nem que os cenários pendentes foram testados.
+
 ## Continuidade
 
 Em nova conversa: ler [`CONTEXTO_GERAL.md`](../CONTEXTO_GERAL.md), o [prompt mestre](../prompts/primeiro-playground-ragdoll.md) e a tarefa atual do Linear. Antes de iniciar a próxima etapa, confirmar o escopo autorizado. Priorizar a preservação do Place1 com o portal e o ragdoll, a documentação e o versionamento de scripts.
