@@ -43,7 +43,7 @@ Antes de iniciar a primeira instalação, **mostre o inventário e explique o pl
 
 ## ETAPA B — Git e repositório
 
-> RDC, instale **Git for Windows** via fonte oficial/winget **apenas se não estiver instalado**; verifique `git --version`. Clone o repositório público `kaduzucchi-art/testezinho-roblox` em uma **nova pasta própria**, sem sobrescrever outra. Verifique `README.md`, `CONTEXO_GERAL.md` (o nome correto é `CONTEXTO_GERAL.md`), `prompts/primeiro-playground-ragdoll.md` e `studio/Place1.rbxl`. Use a branch `main` apenas para leitura, até que haja autorização de colaboração e estratégia de branches. Não solicite token.
+> RDC, instale **Git for Windows** via fonte oficial/winget **apenas se não estiver instalado**; verifique `git --version`. Clone o repositório público `kaduzucchi-art/testezinho-roblox` em uma **nova pasta própria**, sem sobrescrever outra. Verifique `README.md`, `CONTEXTO_GERAL.md`, `prompts/primeiro-playground-ragdoll.md` e `studio/Place1.rbxl`. Use a branch `main` apenas para leitura, até que haja autorização de colaboração e estratégia de branches. Não solicite token.
 
 **Se o repo já existir:** verificar `origin`, branch, conflitos e mudanças não commitadas antes de qualquer `pull`.
 
