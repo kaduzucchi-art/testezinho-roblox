@@ -21,6 +21,14 @@ O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no r
 - Ambiente de ferramentas concluído: Superpowers, Roblox Dev Skill, 23 Roblox Skills, Rokit 1.2.0, Rojo 7.7.1 (CLI + plugin Studio), Selene 0.32.0 e StyLua 2.6.0. Ver [relatório do ambiente](docs/AMBIENTE_ROBLOX_IA_2026-11-22.md).
 - **Testes exploratórios iniciais aprovados pelo usuário:** ragdoll R15 testado pessoalmente, portal futurista aprovado e preservado. [Registro de aprovação](docs/APROVACAO_TESTES_INICIAIS_2026-11-22.md). A próxima etapa (CAR-24) ainda depende de autorização específica; confira o [contexto geral](CONTEXTO_GERAL.md).
 
+## Projeto Roblox salvo no GitHub
+
+- **[Place1.rbxl](studio/Place1.rbxl)** — mapa atual com o portal aprovado e o teste isolado de ragdoll R15. O arquivo binário foi enviado ao GitHub.
+- **[Backups do Studio](studio/backups/)** — snapshots pré-CAR-23 e pré-CAR-25, preservados e versionados.
+- **[Manifesto de arquivos e hashes](studio/README.md)** — instruções de abertura e limitações. A restauração dos backups em outra sessão ainda não foi testada.
+- **[Código Luau em `src/`](src/)** — cliente e servidor do ragdoll continuam disponíveis separadamente para revisão.
+- A aprovação inicial está registrada no [documento de aceite](docs/APROVACAO_TESTES_INICIAIS_2026-11-22.md). **CAR-22, CAR-23 e CAR-25 constam como Done no Linear.** O jogo completo ainda não foi implementado.
+
 ## Blender — pipeline 3D opcional
 
 - **Blender 5.3.0 + MCP for Blender** instalado no PC-KADU e registrado no Codex em 22/11/2026.
