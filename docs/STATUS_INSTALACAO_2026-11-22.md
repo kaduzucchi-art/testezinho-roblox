@@ -11,9 +11,12 @@
 - Servidor MCP global **`Roblox_Studio`** registrado e habilitado na configuração do Codex, usando `cmd.exe /c "cd /d %LOCALAPPDATA%\Roblox && .\mcp.bat"`.
 - A configuração já existente do **REA** foi preservada.
 
+## Confirmação adicional de 22/11/2026
+
+- O indicador no canto inferior direito do Roblox Studio foi observado por acesso remoto e mostrou **`MCP Ready`**. Isso confirma que o Studio está pronto para uma conexão MCP.
+
 ## Ainda não confirmado
 
-- A configuração interna **Enable Studio as MCP server** do Roblox Studio requer confirmação na interface do Studio. Não há procedimento oficial headless confirmado para ativar esse interruptor.
 - A disponibilidade real das ferramentas MCP no início de uma nova conversa do Codex ainda não foi validada. Uma checagem não interativa de leitura não concluiu e foi encerrada sem alterar o jogo.
 - Superpowers e demais skills comunitárias não foram instalados localmente nesta etapa; são adicionais opcionais.
 
@@ -21,7 +24,7 @@
 
 1. Abra um lugar no Roblox Studio.
 2. Acesse **Assistant → ... → Settings → MCP Servers**.
-3. Habilite **Enable Studio as MCP server**.
+3. O Studio já mostrou **`MCP Ready`**; mantenha o servidor habilitado.
 4. O servidor `Roblox_Studio` já está registrado no Codex; não crie outro duplicado. Se a conexão não iniciar, reinicie o Codex ou abra uma conversa nova.
 5. Peça: **“Liste as janelas do Roblox Studio abertas; não altere nada.”**
 6. Só depois utilize [o prompt ragdoll](../prompts/primeiro-playground-ragdoll.md) e salve uma cópia do lugar antes de mudanças maiores.
