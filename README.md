@@ -2,6 +2,12 @@
 
 Projeto experimental de desenvolvimento de experiências Roblox com agentes de IA.
 
+## Comece por aqui no modo Chat
+
+Antes de opinar sobre o MVP ou ajudar Carlos a decidir se aprova, leia por inteiro o [prompt mestre v1.1](prompts/primeiro-playground-ragdoll.md) e depois o [plano da CAR-22](docs/CAR-22_PLANO_MVP_RAGDOLL.md), na branch `main`. Use os dois arquivos como contexto para revisar a proposta e deixe a decisão de aprovação com Carlos. A implementação depende da aprovação explícita dele.
+
+O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no repositório os retornos do Codex sobre o projeto, incluindo respostas, planos, decisões e registros de progresso. Como o repositório é público, mantenha dados pessoais, credenciais e informações privadas fora dos commits.
+
 ## Objetivo
 - Criar protótipos Roblox rápidos e originais, inspirados em mecânicas simples e física divertida.
 - Codex como agente principal, Roblox Studio como editor, Superpowers como metodologia de planejamento e testes.
@@ -19,7 +25,7 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 
 - **Blender 5.3.0 + MCP for Blender** instalado no PC-KADU e registrado no Codex em 22/11/2026.
 - Addon habilitado; servidor local em `127.0.0.1:9876` confirmou conexao TCP na segunda janela do Blender, com modo de segurança habilitado.
-- O teste de listagem de objetos via ferramentas MCP do Codex permanece pendente. [Relatório detalhado](docs/BLENDER_MCP_2026-11-22.md).
+- A leitura da cena via MCP do Codex foi confirmada. Escrita e modelagem seguem pendentes de teste. [Relatório detalhado](docs/BLENDER_MCP_2026-11-22.md).
 - Blender é opcional no protótipo ragdoll, recomendado para modelos 3D originais em uma etapa posterior.
 
 ## Ferramentas
@@ -45,4 +51,4 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 - Não confundir planejamento cadastrado com código implementado ou funcionalidade testada. Consulte o [prompt mestre](prompts/primeiro-playground-ragdoll.md).
 
 ## Como preservar o contexto
-Registrar decisões técnicas e prompts em commits. Conversas do ChatGPT não geram commits automaticamente: é preciso solicitar a atualização em cada sessão. **Este repositório é público: não salvar tokens, credenciais, arquivos privados ou dados pessoais.**
+Registrar decisões técnicas e prompts em commits. Os retornos do Codex referentes ao projeto devem ser registrados em commits, conforme a orientação de continuidade acima. **Este repositório é público: não salvar tokens, credenciais, arquivos privados ou dados pessoais.**
