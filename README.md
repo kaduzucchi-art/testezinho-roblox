@@ -2,9 +2,9 @@
 
 Projeto experimental de desenvolvimento de experiências Roblox com agentes de IA.
 
-## Comece por aqui no modo Chat
+## Comece por aqui no modo Chat ou Codex
 
-Antes de opinar sobre o MVP ou ajudar Carlos a decidir se aprova, leia por inteiro o [prompt mestre v1.1](prompts/primeiro-playground-ragdoll.md) e depois o [plano da CAR-22](docs/CAR-22_PLANO_MVP_RAGDOLL.md), na branch `main`. Use os dois arquivos como contexto para revisar a proposta e deixe a decisão de aprovação com Carlos. A implementação depende da aprovação explícita dele.
+**Leia primeiro o [CONTEXTO_GERAL.md](CONTEXTO_GERAL.md)**, que centraliza estado, ferramentas, decisões e próximos passos. Em seguida, leia integralmente o [prompt mestre v1.1](prompts/primeiro-playground-ragdoll.md), o [plano da CAR-22](docs/CAR-22_PLANO_MVP_RAGDOLL.md) e o relatório da etapa atual, [CAR-23](docs/CAR-23_TESTE_VISUAL_PORTAL.md). O planejamento foi aceito para o primeiro teste visual, mas **novas modificações dependem de autorização por etapa**.
 
 O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no repositório os retornos do Codex sobre o projeto, incluindo respostas, planos, decisões e registros de progresso. Como o repositório é público, mantenha dados pessoais, credenciais e informações privadas fora dos commits.
 
@@ -17,9 +17,9 @@ O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no r
 - Repositório utilizado para documentação, memória de decisões e prompts.
 - Primeiro protótipo: arena pequena com física ragdoll.
 - Prompt salvo: [prompts/primeiro-playground-ragdoll.md](prompts/primeiro-playground-ragdoll.md).
-- **Conexão MCP de ponta a ponta confirmada em 22/11/2026:** Codex acessou `Place1` e listou `Camera`, `Baseplate`, `Baseplate.Texture`, `Terrain`, `SpawnLocation` e `SpawnLocation.Decal` em modo somente leitura. A capacidade de escrita ainda não foi testada. Consulte [o status da instalação](docs/STATUS_INSTALACAO_2026-11-22.md).
+- **Roblox Studio MCP validado em leitura e escrita controlada:** Codex acessou `Place1`, depois criou e salvou o portal `Workspace.MCP_Demo_Temporaria` na CAR-23. A [captura real](docs/evidencias/CAR-23-portal.jpg) e o [relatório com backup](docs/CAR-23_TESTE_VISUAL_PORTAL.md) estão no GitHub. O usuário ainda precisa avaliar o portal; **playtest não executado**.
 - Ambiente de ferramentas concluído: Superpowers, Roblox Dev Skill, 23 Roblox Skills, Rokit 1.2.0, Rojo 7.7.1 (CLI + plugin Studio), Selene 0.32.0 e StyLua 2.6.0. Ver [relatório do ambiente](docs/AMBIENTE_ROBLOX_IA_2026-11-22.md).
-- **Próxima etapa:** use o [prompt mestre atualizado de ragdoll](prompts/primeiro-playground-ragdoll.md) e peça primeiro o plano para aprovação, antes de editar o place.
+- **Próxima etapa:** avaliar o portal temporário da CAR-23 no Roblox Studio. Não remover o portal nem começar a CAR-24 sem autorização. Conferir sempre o [contexto geral](CONTEXTO_GERAL.md).
 
 ## Blender — pipeline 3D opcional
 
@@ -46,7 +46,7 @@ O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no r
 
 - [Projeto: Testezinho Roblox — AI Ragdoll Playground](https://linear.app/carloszucchi/project/testezinho-roblox-ai-ragdoll-playground-8cd1127081c2).
 - Criado em 22/11/2026 com três marcos: **M0 — Planejamento aprovado**, **M1 — Protótipo jogável**, **M2 — Testes e entrega técnica**.
-- Foram cadastradas 11 tarefas (`CAR-21` a `CAR-31`): apenas `CAR-21` (validação de leitura MCP) está concluída; o planejamento com Superpowers (`CAR-22`) está como Todo e todo o trabalho de gameplay permanece pendente.
+- O planejamento CAR-22 foi registrado no GitHub. O teste visual de escrita e backup da **CAR-23 está em andamento** até a avaliação do usuário; CAR-24 e a implementação de ragdoll não começaram. O backlog inclui também CAR-32 (Blender futuro).
 - O Linear é o acompanhamento de tarefas; o GitHub é a referência para prompts, código e documentação. Cauã ainda não consta como membro do Linear, portanto não recebeu atribuições.
 - Não confundir planejamento cadastrado com código implementado ou funcionalidade testada. Consulte o [prompt mestre](prompts/primeiro-playground-ragdoll.md).
 
