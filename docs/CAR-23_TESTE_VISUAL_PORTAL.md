@@ -1,7 +1,7 @@
 # CAR-23 · Primeiro teste visual de escrita no Roblox Studio
 
 **Data:** 22/11/2026  
-**Status:** portal criado, salvo localmente e aguardando avaliação de Carlos.  
+**Status:** portal criado e salvo localmente, **aprovado visualmente pelo usuário**; playtest em modo Play e abertura do backup ainda pendentes.  
 **Escopo autorizado:** CAR-23. [Tarefa no Linear](https://linear.app/carloszucchi/issue/CAR-23/salvar-backup-do-place1-e-validar-escrita-mcp-reversivel)
 
 ## Backup antes da edição
@@ -34,6 +34,10 @@ Selecione **Explorador → Workspace → MCP_Demo_Temporaria** e pressione **F**
 
 ## Próxima decisão
 
-O portal permanece no projeto para avaliação. Todos os objetos criados pertencem ao Model, de modo que sua remoção futura pode ser feita somente nesse grupo após autorização. A tarefa segue em andamento até a revisão de Carlos. O teste foi decorativo, sem scripts no projeto, gameplay, Blender ou publicação. A CAR-24 depende de nova autorização.
+O usuário avaliou o portal pelo print e achou o visual futurista muito bom. **Preservar o portal no projeto.** Todos os objetos criados pertencem ao Model, de modo que sua remoção futura pode ser feita somente nesse grupo após autorização. A tarefa segue em andamento enquanto o playtest e a possibilidade de restaurar o backup não forem verificados. O teste foi decorativo, sem scripts no projeto, gameplay, Blender ou publicação. A CAR-24 depende de nova autorização.
 
 A documentação oficial do Roblox foi a referência principal. A sessão também consultou a documentação do Creator Hub pelo Context7 para confirmar `Anchored`, `CanCollide`, `CanTouch` e `CanQuery`. [Arquivos de lugar](https://create.roblox.com/docs/pt-br/projects/place-files) · [BasePart](https://create.roblox.com/docs/reference/engine/classes/BasePart) · [PointLight](https://create.roblox.com/docs/reference/engine/classes/PointLight)
+
+## Feedback posterior — 22/11/2026
+
+O usuário aprovou o **visual futurista** do portal após vê-lo em imagem e pediu que seja preservado. Em seguida, autorizou um **teste isolado de ragdoll R15** antes da construção da arena completa. A instrução atual para esse teste está no [prompt de ragdoll isolado](../prompts/teste-ragdoll-r15-isolado.md). **Esse teste ainda não foi realizado.** Não remover `MCP_Demo_Temporaria` nem avançar à CAR-24 por conta própria.
