@@ -9,7 +9,7 @@
 - **Codex:** servidor MCP global **`blender`** registrado e marcado como **enabled** sem remover `Roblox_Studio` nem `rea`. O Codex usa o executável `uvx` instalado e inicia `mcp-for-blender`.
 - **Configuração do MCP:** `BLENDER_HOST=127.0.0.1`, `BLENDER_PORT=9876`, `BLENDER_MCP_SAFE_MODE=1`. Este modo restringe scripts potencialmente arriscados.
 - **Teste realizado:** uma segunda instância do Blender iniciou automaticamente a ponte. A porta **127.0.0.1:9876** apresentou estado **Listen** e uma conexão TCP de teste foi bem-sucedida.
-- **Sessão preservada:** a primeira janela do Blender continha uma cena não salva; ela foi mantida aberta. A ponte MCP verificada está na **segunda janela** do Blender, aberta exclusivamente para teste.
+- **Sessão e janelas:** durante a configuração, uma primeira janela do Blender com cena não salva foi inicialmente preservada e uma segunda janela foi aberta para teste. **Na verificação final, apenas a segunda janela (a que executa o MCP) aparecia entre os processos ativos; não foi executado comando explícito para fechar ou salvar a primeira.**
 - **Configuração do Codex:** foi feita uma cópia de segurança do arquivo de configuração antes de registrar o servidor.
 
 ## O que está comprovado — e o que ainda falta
