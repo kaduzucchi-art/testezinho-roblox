@@ -1,6 +1,6 @@
 # CONTEXTO GERAL — Testezinho Roblox
 
-> **Fonte de continuidade do projeto.** Atualizado em 22/11/2026 após o teste isolado de ragdoll da **CAR-25**. Este arquivo resume estado e decisões, mas **não substitui** o [prompt mestre](prompts/primeiro-playground-ragdoll.md), o [plano aprovado](docs/CAR-22_PLANO_MVP_RAGDOLL.md) nem as evidências de cada tarefa.  
+> **Fonte de continuidade do projeto.** Atualizado em 22/11/2026 após a **aprovação explícita pelo usuário** dos primeiros testes do portal (CAR-23) e ragdoll R15 (CAR-25). Este arquivo resume estado e decisões, mas **não substitui** o [prompt mestre](prompts/primeiro-playground-ragdoll.md), o [plano aprovado](docs/CAR-22_PLANO_MVP_RAGDOLL.md) nem as evidências de cada tarefa.  
 > **Antes de trabalhar:** leia este resumo, o prompt mestre na íntegra e a documentação da tarefa relevante. Confirme o estado atual no Studio/Linear/GitHub antes de qualquer escrita.
 
 ## 1. Objetivo
@@ -28,9 +28,9 @@ O jogo **não está pronto**. O teste isolado de ragdoll R15 foi implementado e 
 | MCP Roblox em leitura | Confirmado | Codex listou objetos do `Workspace` no `Place1` |
 | MCP Blender em leitura | Confirmado | Codex listou `Camera`, `Cube`, `Light` na cena |
 | CAR-22 — especificação de ragdoll | Plano salvo; arquitetura aceita para a CAR-23 | [Plano](docs/CAR-22_PLANO_MVP_RAGDOLL.md); não significa aprovação para todas as próximas tarefas |
-| CAR-23 — backup e prova de escrita | **Em andamento**; visual aprovado e portal confirmado em Play na CAR-25. Travessia dedicada e restauração do backup pendentes | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
+| CAR-23 — backup e prova de escrita | **Teste inicial aprovado pelo usuário**; preservação do portal e escrita MCP documentadas. Travessia dedicada e reabertura do backup não testadas | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
 | CAR-24 — arena jogável | Não iniciada | Depende de nova autorização |
-| CAR-25 — ragdoll R15 | **Em andamento**; teste isolado implementado e validado em Play solo | [Relatório e captura](docs/CAR-25_TESTE_RAGDOLL_R15.md) |
+| CAR-25 — ragdoll R15 | **Teste isolado aprovado pelo usuário**; código versionado e 20 ciclos documentados. Multiplayer e toque físico não testados | [Relatório e captura](docs/CAR-25_TESTE_RAGDOLL_R15.md) |
 | CAR-26 — plataforma de impulso | Não iniciada | Cooldown e validação no servidor |
 | CAR-27 — interface e reset | Não iniciada | PC/celular |
 | CAR-28–CAR-30 — testes e código versionado | Não iniciados | Solo, multiplayer, segurança, desempenho, scripts no GitHub |
@@ -66,12 +66,14 @@ Para encontrar o portal: **Explorador → Workspace → MCP_Demo_Temporaria → 
 
 ## 6. Próxima ação recomendada
 
-**Agora:** avaliar o teste de ragdoll no Place1 local. Inicie Play (F5), ande alguns passos e pressione R ou clique em **Ragdoll / Levantar**. O playtest final realizou 20 ciclos, recuperação no ar, respawn após morte simulada com ragdoll ativo e movimento pós-respawn. [Evidências, fontes e pendências](docs/CAR-25_TESTE_RAGDOLL_R15.md).
+**Agora:** a avaliação manual foi concluída: **o usuário testou e aprovou o ragdoll R15** e já havia aprovado o visual do portal. A fase de **testes exploratórios iniciais está encerrada**, conforme [registro de aprovação](docs/APROVACAO_TESTES_INICIAIS_2026-11-22.md). Código de servidor e cliente e evidências estão versionados no GitHub. **Nenhuma nova mecânica foi autorizada ainda.**
 
-**Depois:** aguardar avaliação de Carlos. Multiplayer, toque em dispositivo e reabertura do backup seguem pendentes. CAR-24, CAR-26 e CAR-27 completa exigem autorização própria.
+**Próxima etapa, mediante autorização específica:** avançar para a **CAR-24 (arena)**, preservando portal e ragdoll, e depois CAR-26/27. Testes de qualidade normais durante o desenvolvimento continuam necessários. Multiplayer, toque em dispositivo físico e reabertura de backup ainda não têm evidência completa.
 
 ## 7. Regra para próximas conversas no Codex
 
 > Leia o arquivo `CONTEXTO_GERAL.md` **e o prompt mestre completo** de `prompts/primeiro-playground-ragdoll.md` na branch `main`, além do registro específico da tarefa. **Para o teste já executado, consulte `prompts/teste-ragdoll-r15-isolado.md` e `docs/CAR-25_TESTE_RAGDOLL_R15.md`.** Consulte o Linear para o estado atual. Não presuma que arquivos de documentação representam scripts implementados no Roblox. Respeite a aprovação por fase e registre no GitHub decisões e resultados relevantes, sem dados privados.
+
+Último feedback recebido: o usuário confirmou ter testado o ragdoll e **aprovou** o resultado, declarando encerrada a fase de demonstrações. [Aprovação formal registrada](docs/APROVACAO_TESTES_INICIAIS_2026-11-22.md).
 
 Este documento **não é sincronizado automaticamente**: atualizar quando houver mudanças reais. Antes de confiar no estado, conferir os registros mais recentes de GitHub, Linear e Studio.
