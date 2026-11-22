@@ -21,16 +21,23 @@ O jogo **não está pronto**. O teste isolado de ragdoll R15 foi implementado e 
 - **Context7:** apoio opcional para documentação atual, **Creator Hub oficial como fonte primária** para APIs Roblox. A disponibilidade do Context7 no Codex depende da sessão. [Decisão](docs/CONTEXT7_NO_DESENVOLVIMENTO.md).
 - **REA:** fora do fluxo principal.
 
+## Snapshot completo do mapa no GitHub — 22/11/2026
+
+- **[studio/Place1.rbxl](studio/Place1.rbxl):** arquivo local salvo após o teste do ragdoll, contendo o portal e os scripts de teste, **98.272 bytes**, SHA-256 `00E65EDCEBD7DFA1C10E707C3AB07979DED36894E4D0887946C010E0D8F65433`.
+- **[studio/backups/](studio/backups/):** backup anterior ao portal e backup após o portal, antes do ragdoll. Ambos também foram enviados ao GitHub.
+- **[studio/README.md](studio/README.md):** manifestos e hashes para conferência. O arquivo `.rbxl` é binário; scripts Luau foram versionados em `src/`.
+- **Limite:** os backups foram conferidos por integridade, mas sua abertura para restauração não foi testada. A cópia versionada é uma fotografia daquele momento, **não sincronização automática** com o Studio.
+
 ## 3. Situação em 22/11/2026
 
 | Item | Estado | Evidência ou pendência |
 | --- | --- | --- |
 | MCP Roblox em leitura | Confirmado | Codex listou objetos do `Workspace` no `Place1` |
 | MCP Blender em leitura | Confirmado | Codex listou `Camera`, `Cube`, `Light` na cena |
-| CAR-22 — especificação de ragdoll | Plano salvo; arquitetura aceita para a CAR-23 | [Plano](docs/CAR-22_PLANO_MVP_RAGDOLL.md); não significa aprovação para todas as próximas tarefas |
-| CAR-23 — backup e prova de escrita | **Teste inicial aprovado pelo usuário**; preservação do portal e escrita MCP documentadas. Travessia dedicada e reabertura do backup não testadas | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
+| CAR-22 — especificação de ragdoll | **Done no Linear**; plano aceito para a fase de testes iniciais | [Plano](docs/CAR-22_PLANO_MVP_RAGDOLL.md); não significa aprovação para todas as próximas tarefas |
+| CAR-23 — backup e prova de escrita | **Done no Linear**; teste inicial aprovado pelo usuário; preservação do portal e escrita MCP documentadas. Travessia dedicada e reabertura do backup não testadas | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
 | CAR-24 — arena jogável | Não iniciada | Depende de nova autorização |
-| CAR-25 — ragdoll R15 | **Teste isolado aprovado pelo usuário**; código versionado e 20 ciclos documentados. Multiplayer e toque físico não testados | [Relatório e captura](docs/CAR-25_TESTE_RAGDOLL_R15.md) |
+| CAR-25 — ragdoll R15 | **Done no Linear**; teste isolado aprovado pelo usuário; código versionado e 20 ciclos documentados. Multiplayer e toque físico não testados | [Relatório e captura](docs/CAR-25_TESTE_RAGDOLL_R15.md) |
 | CAR-26 — plataforma de impulso | Não iniciada | Cooldown e validação no servidor |
 | CAR-27 — interface e reset | Não iniciada | PC/celular |
 | CAR-28–CAR-30 — testes e código versionado | Não iniciados | Solo, multiplayer, segurança, desempenho, scripts no GitHub |
@@ -61,7 +68,7 @@ Para encontrar o portal: **Explorador → Workspace → MCP_Demo_Temporaria → 
 4. **Proteger o mapa:** backup antes de alterações amplas; não sincronizar Rojo automaticamente nem apagar recursos existentes sem autorização.
 5. **Não publicar**, monetizar, ativar serviços pagos, baixar assets não auditados ou divulgar credenciais.
 6. Apenas marcar uma tarefa como concluída quando as evidências realmente sustentarem o aceite. Manter distinção entre **planejado, implementado, observado e testado**.
-7. GitHub guarda as fontes e registros. O **arquivo RBXL local não deve ser presumido disponível no GitHub**: somente o que foi efetivamente versionado.
+7. GitHub guarda as fontes e registros. A versão atual `studio/Place1.rbxl` **foi enviada ao GitHub** com os dois backups `studio/backups/` em 22/11/2026. Novas edições no Studio **não sincronizam automaticamente** os arquivos .rbxl: preservar, comparar e enviar novos snapshots quando houver mudanças reais.
 8. O projeto é administrado atualmente por uma pessoa; colaboração futura dependerá de convites explícitos. Não alterar permissões automaticamente.
 
 ## 6. Próxima ação recomendada
