@@ -13,6 +13,9 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 - Prompt salvo: [prompts/primeiro-playground-ragdoll.md](prompts/primeiro-playground-ragdoll.md).
 - Codex configurado com Roblox Studio Agent Plugin v0.2.3 e servidor `Roblox_Studio` registrado em 22/11/2026. **A ativação do interruptor MCP dentro do Studio e o teste ao vivo ainda precisam ser confirmados.** Consulte [o status da instalação](docs/STATUS_INSTALACAO_2026-11-22.md).
 
+
+- Ambiente de ferramentas concluído em 22/11/2026: Superpowers, Roblox Dev Skill, 23 Roblox Skills, Rokit 1.2.0, Rojo 7.7.1 (CLI + plugin Studio), Selene 0.32.0 e StyLua 2.6.0. Ver [relatório de instalação](docs/AMBIENTE_ROBLOX_IA_2026-11-22.md). Ainda falta validar uma chamada MCP do Codex ao Studio.
+
 ## Ferramentas
 1. Roblox Studio MCP oficial: https://create.roblox.com/docs/studio/mcp
 2. Roblox Studio Agent Plugin: https://github.com/Roblox/roblox-studio-agent-plugin
