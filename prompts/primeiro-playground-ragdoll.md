@@ -2,7 +2,7 @@
 
 **Projeto:** [testezinho-roblox](https://github.com/kaduzucchi-art/testezinho-roblox)  
 **Data de referência:** 22/11/2026  
-**Estado:** MCPs Roblox Studio e Blender confirmados de ponta a ponta em modo de leitura; o protótipo de gameplay **ainda não foi implementado**.
+**Estado:** Roblox Studio MCP **validado em leitura e escrita** na demonstração visual da CAR-23; Blender MCP validado em leitura. O protótipo de gameplay **ainda não foi implementado**. Leia primeiro o [CONTEXTO_GERAL.md](../CONTEXTO_GERAL.md) para o status atualizado.
 
 > **Missão para o Codex:** atuar como desenvolvedor Roblox (Luau), designer técnico e testador, usando a integração MCP oficial do Roblox Studio e as skills do Superpowers para criar um protótipo **original, pequeno, jogável, responsivo e testado**. Primeiro planejar e pedir aprovação; só então construir.
 
@@ -10,7 +10,7 @@
 
 - Windows, Roblox Studio aberto com o projeto **Place1** (template Baseplate) em modo de edição.
 - O MCP `Roblox_Studio` **já foi testado de ponta a ponta em modo de leitura**: o Codex identificou `Camera`, `Baseplate`, `Baseplate.Texture`, `Terrain`, `SpawnLocation` e `SpawnLocation.Decal`.
-- O indicador do Studio mostrou **MCP Ready**. Não foi feita edição pelo MCP ainda; testar a capacidade de escrita com uma pequena operação controlada depois da aprovação.
+- O indicador do Studio mostrou **MCP Ready**. Após aprovação específica da CAR-23, o Codex **criou e salvou** `Workspace.MCP_Demo_Temporaria` (portal decorativo com 47 Parts ancoradas e 2 PointLights), sem alterar `Baseplate` e `SpawnLocation` segundo o registro de inspeção. O backup local foi verificado por SHA-256. O portal permanece até avaliação do usuário; **não houve playtest**. Consulte o [relatório CAR-23](../docs/CAR-23_TESTE_VISUAL_PORTAL.md).
 - O Codex tem Roblox Studio Agent Plugin **v0.2.3**, **Superpowers v7.0.1**, **Roblox Dev Skill**, **23 Roblox Skills**, **Rokit 1.2.0**, **Rojo 7.7.1** (CLI e plugin no Studio), **Selene 0.32.0**, **StyLua 2.6.0** e Git. REA está configurado, mas **não é necessário** para este projeto.
 - **Blender MCP validado de ponta a ponta em modo somente leitura:** conforme retorno do Codex, o Blender **5.3.0** (PID `5836`, addon relatado como **2.0**) respondeu pela integração `blender`. O Codex identificou a cena `Scene`, ainda sem `.blend` salvo, em Modo Objeto, com `Cube` ativo, e listou `Camera`, `Cube` e `Light` com transformações e propriedades. **Nenhum objeto foi modificado; a escrita/modelagem não foi testada.**
 - O Blender MCP está configurado para conexão local em `127.0.0.1:9876`, com modo de segurança ligado. **Não desabilitar as restrições para forçar ferramentas de execução Python.**
@@ -70,6 +70,8 @@ Não adicionar pets, lojas, moedas, rebirth, inventário persistente, DataStores
 - Não alterar configurações globais do computador, credenciais, permissões ou outros projetos. Não alterar a cena Blender não salva, desabilitar o modo de segurança ou executar código arbitrário sem autorização.
 
 ## 4. Processo de execução obrigatório
+
+**Nota de execução (22/11/2026):** a fase de plano da CAR-22 foi realizada e sua arquitetura foi aceita para a **CAR-23**, executada parcialmente (backup e demo visual). **Não repetir essa etapa nem avançar à CAR-24 sem autorização.** Este roteiro abaixo mantém as instruções originais para implementação futura; o estado real e a próxima decisão estão no [contexto geral](../CONTEXTO_GERAL.md).
 
 ### Fase A — Primeiro retorno (SEM alterar o Roblox Studio OU o Blender)
 
