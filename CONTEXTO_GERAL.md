@@ -28,6 +28,13 @@ O jogo **não está pronto**. O teste isolado de ragdoll R15 foi implementado e 
 - **[studio/README.md](studio/README.md):** manifestos e hashes para conferência. O arquivo `.rbxl` é binário; scripts Luau foram versionados em `src/`.
 - **Limite:** os backups foram conferidos por integridade, mas sua abertura para restauração não foi testada. A cópia versionada é uma fotografia daquele momento, **não sincronização automática** com o Studio.
 
+## Obsidian — espelho visual do GitHub
+
+- O projeto foi aberto como vault **`testezinho-roblox`** no Obsidian 1.15.1, no PC. A pasta local é um **clone Git** deste repositório, não um banco de dados de memória separado.
+- **[OBSIDIAN_INICIO.md](OBSIDIAN_INICIO.md)** é o painel de navegação; **este `CONTEXTO_GERAL.md` continua sendo a memória técnica de referência** para Codex e ChatGPT.
+- Plugin Obsidian Git 2.43.0 instalado e ativo; pull no início e a cada 10 minutos. **Auto-push e auto-commit desligados** porque o repositório é público. A autorização local para push GitHub está pendente (teste não interativo retornou falha de autenticação); atualizar remotamente via GitHub segue funcionando pela conexão ChatGPT.
+- **[Procedimento e limites](docs/OBSIDIAN_INTEGRACAO_2026-11-22.md)**. A pasta `.obsidian/` não é enviada ao GitHub; novas notas locais devem ser revisadas antes de versionar. Obsidian não substitui Linear, GitHub ou backups RBXL.
+
 ## 3. Situação em 22/11/2026
 
 | Item | Estado | Evidência ou pendência |
