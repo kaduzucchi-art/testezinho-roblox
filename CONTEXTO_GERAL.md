@@ -28,9 +28,9 @@ O jogo **não está pronto**. A implementação de arena e mecânicas de gamepla
 | MCP Roblox em leitura | Confirmado | Codex listou objetos do `Workspace` no `Place1` |
 | MCP Blender em leitura | Confirmado | Codex listou `Camera`, `Cube`, `Light` na cena |
 | CAR-22 — especificação de ragdoll | Plano salvo; arquitetura aceita para a CAR-23 | [Plano](docs/CAR-22_PLANO_MVP_RAGDOLL.md); não significa aprovação para todas as próximas tarefas |
-| CAR-23 — backup e prova de escrita | **Em andamento**, aguardando avaliação visual do usuário | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
+| CAR-23 — backup e prova de escrita | **Em andamento**; usuário aprovou visual do portal, mas playtest/restauração do backup continuam pendentes | [Relatório com captura](docs/CAR-23_TESTE_VISUAL_PORTAL.md) |
 | CAR-24 — arena jogável | Não iniciada | Depende de nova autorização |
-| CAR-25 — ragdoll R15 | Não iniciada | Inspecionar juntas reais do avatar |
+| CAR-25 — ragdoll R15 | **Teste isolado autorizado, ainda não executado** | [Prompt restrito de ragdoll](prompts/teste-ragdoll-r15-isolado.md); inspecionar rig e juntas reais |
 | CAR-26 — plataforma de impulso | Não iniciada | Cooldown e validação no servidor |
 | CAR-27 — interface e reset | Não iniciada | PC/celular |
 | CAR-28–CAR-30 — testes e código versionado | Não iniciados | Solo, multiplayer, segurança, desempenho, scripts no GitHub |
@@ -47,11 +47,11 @@ O Codex registrou no GitHub a criação, no Studio, de **`Workspace.MCP_Demo_Tem
 - A cena foi salva e documentada no commit [`234b8c92`](https://github.com/kaduzucchi-art/testezinho-roblox/commit/234b8c92d98aa2ffbd89f66ca71e45becc897f5a).
 - **Captura real:** [`docs/evidencias/CAR-23-portal.jpg`](docs/evidencias/CAR-23-portal.jpg).
 - **Registro técnico completo:** [`docs/CAR-23_TESTE_VISUAL_PORTAL.md`](docs/CAR-23_TESTE_VISUAL_PORTAL.md).
-- **Ainda não feito:** playtest com avatar, verificação de restauração do backup e avaliação do usuário.
+- **Ainda não feito:** playtest com avatar e verificação de restauração do backup. **Avaliação visual recebida:** o usuário gostou do visual futurista do portal (22/11/2026) e quer preservá-lo.
 
 Para encontrar o portal: **Explorador → Workspace → MCP_Demo_Temporaria → selecionar Model → tecla F**.
 
-**Decisão pendente:** o usuário deve ver o portal e dizer se o aprova, quer ajustes ou autoriza a remoção. **Não remover o Model antes dessa avaliação e não iniciar a CAR-24 sem nova autorização.** O teste comprova escrita e inspeção no Studio segundo os registros do Codex, mas não comprova que as mecânicas planejadas funcionam.
+**Decisão recebida:** o usuário aprovou o visual do portal. **Não remover o Model sem autorização e não iniciar a CAR-24 sem nova autorização.** O teste comprova escrita e inspeção no Studio segundo os registros do Codex, mas não comprova que as mecânicas planejadas funcionam.
 
 ## 5. Decisões e limites permanentes
 
@@ -66,12 +66,12 @@ Para encontrar o portal: **Explorador → Workspace → MCP_Demo_Temporaria → 
 
 ## 6. Próxima ação recomendada
 
-**Primeiro:** visualizar a `MCP_Demo_Temporaria` no Roblox Studio, decidir se o teste atende às expectativas e, se necessário, realizar um playtest controlado em cópia/estado salvo. O Linear mantém a **CAR-23 em andamento** até essa avaliação.
+**Agora:** o usuário aprovou visualmente o portal e pediu um **teste imediato de ragdoll R15**, sem construir a arena ainda. A execução está descrita em [`prompts/teste-ragdoll-r15-isolado.md`](prompts/teste-ragdoll-r15-isolado.md). O Codex deve criar **novo backup do estado com o portal**, implementar somente o teste mínimo reversível da **CAR-25**, rodar playtests, conferir Output e reportar evidências. Preservar o portal e o spawn. **Esse teste ainda não foi executado.**
 
-**Depois, mediante autorização explícita:** preparar execução incremental da **CAR-24 (arena)** e, subsequentemente, ragdoll, lançamento, UI e testes de qualidade. Reutilizar a especificação do plano CAR-22 e registrar progresso real no Linear e no GitHub.
+**Depois:** usuário avalia o ragdoll; CAR-23 pode seguir em andamento até teste em modo Play/restauração de backup. **CAR-24 (arena), CAR-26 (impulso) e demais etapas continuam sem autorização.**
 
 ## 7. Regra para próximas conversas no Codex
 
-> Leia o arquivo `CONTEXTO_GERAL.md` **e o prompt mestre completo** de `prompts/primeiro-playground-ragdoll.md` na branch `main`, além do registro específico da tarefa. Consulte o Linear para o estado atual. Não presuma que arquivos de documentação representam scripts implementados no Roblox. Respeite a aprovação por fase e registre no GitHub decisões e resultados relevantes, sem dados privados.
+> Leia o arquivo `CONTEXTO_GERAL.md` **e o prompt mestre completo** de `prompts/primeiro-playground-ragdoll.md` na branch `main`, além do registro específico da tarefa. **Para o próximo teste autorizado, leia `prompts/teste-ragdoll-r15-isolado.md`.** Consulte o Linear para o estado atual. Não presuma que arquivos de documentação representam scripts implementados no Roblox. Respeite a aprovação por fase e registre no GitHub decisões e resultados relevantes, sem dados privados.
 
 Este documento **não é sincronizado automaticamente**: atualizar quando houver mudanças reais. Antes de confiar no estado, conferir os registros mais recentes de GitHub, Linear e Studio.
