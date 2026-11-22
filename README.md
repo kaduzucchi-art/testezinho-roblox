@@ -29,6 +29,13 @@ O GitHub é o registro contínuo deste projeto. A partir deste plano, salve no r
 - **[Código Luau em `src/`](src/)** — cliente e servidor do ragdoll continuam disponíveis separadamente para revisão.
 - A aprovação inicial está registrada no [documento de aceite](docs/APROVACAO_TESTES_INICIAIS_2026-11-22.md). **CAR-22, CAR-23 e CAR-25 constam como Done no Linear.** O jogo completo ainda não foi implementado.
 
+## Obsidian — central de conhecimento
+
+- **Obsidian 1.15.1 + plugin Obsidian Git 2.43.0** instalados no PC e configurados como vault **`testezinho-roblox`**, espelhando este mesmo repositório.
+- **[OBSIDIAN_INICIO.md](OBSIDIAN_INICIO.md):** painel de navegação das notas, decisões, prompt e tarefas.
+- **[Documentação da integração](docs/OBSIDIAN_INTEGRACAO_2026-11-22.md):** pull no início + a cada 10 minutos, envio manual de commits, `.obsidian/` fora do repositório público.
+- **Atenção:** a autenticação do GitHub no PC ainda é necessária para enviar notas diretamente pelo Obsidian Git. O clone já recebe atualizações. Não inserir dados pessoais neste vault público.
+
 ## Blender — pipeline 3D opcional
 
 - **Blender 5.3.0 + MCP for Blender** instalado no PC-KADU e registrado no Codex em 22/11/2026.
