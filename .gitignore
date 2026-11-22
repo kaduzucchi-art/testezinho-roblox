@@ -1,0 +1,10 @@
+# Obsidian configuration, window state, and community plugins are local to each device.
+# The vault's Markdown project notes are versioned; private settings are not.
+.obsidian/
+
+# OS / editor temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
