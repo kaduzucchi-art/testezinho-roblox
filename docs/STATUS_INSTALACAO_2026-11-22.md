@@ -15,10 +15,13 @@
 
 - O indicador no canto inferior direito do Roblox Studio foi observado por acesso remoto e mostrou **`MCP Ready`**. Isso confirma que o Studio está pronto para uma conexão MCP.
 
-## Ainda não confirmado
+## Teste de ponta a ponta confirmado — 22/11/2026
 
-- A disponibilidade real das ferramentas MCP no início de uma nova conversa do Codex ainda não foi validada. Uma checagem não interativa de leitura não concluiu e foi encerrada sem alterar o jogo.
-- Superpowers e demais skills comunitárias não foram instalados localmente nesta etapa; são adicionais opcionais.
+- O usuário compartilhou o resultado do Codex confirmando acesso ao MCP `Roblox_Studio` e ao projeto **Place1**, em modo de edição.
+- Leitura dos objetos do `Workspace` concluída: `Camera`, `Baseplate`, `Baseplate.Texture`, `Terrain`, `SpawnLocation`, `SpawnLocation.Decal`.
+- O teste foi executado em **modo somente leitura**. Nenhum objeto foi modificado.
+- O acesso de leitura de ponta a ponta está confirmado. A edição por Codex ainda não foi testada nesse projeto.
+- Superpowers, Roblox Dev Skill, 23 Roblox Skills, Rojo, Rokit, Selene e StyLua já foram instalados; ver [relatório do ambiente](AMBIENTE_ROBLOX_IA_2026-11-22.md).
 
 ## Próximos passos do usuário no Studio
 
@@ -26,8 +29,8 @@
 2. Acesse **Assistant → ... → Settings → MCP Servers**.
 3. O Studio já mostrou **`MCP Ready`**; mantenha o servidor habilitado.
 4. O servidor `Roblox_Studio` já está registrado no Codex; não crie outro duplicado. Se a conexão não iniciar, reinicie o Codex ou abra uma conversa nova.
-5. Peça: **“Liste as janelas do Roblox Studio abertas; não altere nada.”**
-6. Só depois utilize [o prompt ragdoll](../prompts/primeiro-playground-ragdoll.md) e salve uma cópia do lugar antes de mudanças maiores.
+5. **Teste de listagem concluído** pelo Codex. Salve uma cópia do lugar antes de mudanças maiores.
+6. Quando decidir iniciar a implementação, use [o prompt ragdoll](../prompts/primeiro-playground-ragdoll.md) e peça um plano antes de alterar o mapa.
 
 Fontes oficiais:
 - https://github.com/Roblox/roblox-studio-agent-plugin
