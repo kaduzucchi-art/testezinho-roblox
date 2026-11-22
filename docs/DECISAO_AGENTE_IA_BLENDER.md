@@ -4,6 +4,20 @@
 **Projeto:** Testezinho Roblox — AI Ragdoll Playground  
 **Status:** decisão atual; reavaliar quando surgir uma necessidade concreta de modelagem 3D.
 
+## Instrução obrigatória para o Codex
+
+**Antes de planejar, modelar, programar ou alterar qualquer coisa, leia integralmente o prompt mestre atualizado do projeto:**
+
+- **Arquivo:** [`prompts/primeiro-playground-ragdoll.md`](../prompts/primeiro-playground-ragdoll.md)
+- **URL:** https://github.com/kaduzucchi-art/testezinho-roblox/blob/main/prompts/primeiro-playground-ragdoll.md
+- **Repositório:** `kaduzucchi-art/testezinho-roblox`, branch `main`.
+
+**Ordem de leitura:** (1) prompt mestre completo, (2) `README.md` e documentação relevante em `docs/`, (3) este registro de decisão. Não se limite a ler o nome do arquivo ou um resumo anterior: use o conteúdo atual do GitHub como referência.
+
+Esta decisão sobre o Blender **complementa, mas não substitui** o prompt mestre. Se houver divergências, siga o escopo, os limites de segurança e a exigência de aprovação definidos no prompt mestre e apresente o conflito antes de agir.
+
+**Próxima tarefa:** preparar a especificação e o plano da `CAR-22` no Linear, utilizando Superpowers. **Não modifique o Roblox Studio, a cena do Blender ou o código do jogo nesta etapa; aguarde aprovação explícita.**
+
 ## Vale a pena instalar outro agente de IA para o Blender?
 
 **Por enquanto, não.** O próprio Codex já pode atuar como agente de modelagem 3D por meio do Blender MCP.
