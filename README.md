@@ -11,7 +11,7 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 - Repositório utilizado para documentação, memória de decisões e prompts.
 - Primeiro protótipo: arena pequena com física ragdoll.
 - Prompt salvo: [prompts/primeiro-playground-ragdoll.md](prompts/primeiro-playground-ragdoll.md).
-- Configuração do Codex com MCP oficial do Roblox em andamento: não considerar conexão testada até confirmação.
+- Codex configurado com Roblox Studio Agent Plugin v0.2.3 e servidor `Roblox_Studio` registrado em 22/11/2026. **A ativação do interruptor MCP dentro do Studio e o teste ao vivo ainda precisam ser confirmados.** Consulte [o status da instalação](docs/STATUS_INSTALACAO_2026-11-22.md).
 
 ## Ferramentas
 1. Roblox Studio MCP oficial: https://create.roblox.com/docs/studio/mcp
