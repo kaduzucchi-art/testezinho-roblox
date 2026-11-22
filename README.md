@@ -15,6 +15,13 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 - Ambiente de ferramentas concluído: Superpowers, Roblox Dev Skill, 23 Roblox Skills, Rokit 1.2.0, Rojo 7.7.1 (CLI + plugin Studio), Selene 0.32.0 e StyLua 2.6.0. Ver [relatório do ambiente](docs/AMBIENTE_ROBLOX_IA_2026-11-22.md).
 - **Próxima etapa:** use o [prompt mestre atualizado de ragdoll](prompts/primeiro-playground-ragdoll.md) e peça primeiro o plano para aprovação, antes de editar o place.
 
+## Blender — pipeline 3D opcional
+
+- **Blender 5.3.0 + MCP for Blender** instalado no PC-KADU e registrado no Codex em 22/11/2026.
+- Addon habilitado; servidor local em `127.0.0.1:9876` confirmou conexao TCP na segunda janela do Blender, com modo de segurança habilitado.
+- O teste de listagem de objetos via ferramentas MCP do Codex permanece pendente. [Relatório detalhado](docs/BLENDER_MCP_2026-11-22.md).
+- Blender é opcional no protótipo ragdoll, recomendado para modelos 3D originais em uma etapa posterior.
+
 ## Ferramentas
 1. Roblox Studio MCP oficial: https://create.roblox.com/docs/studio/mcp
 2. Roblox Studio Agent Plugin: https://github.com/Roblox/roblox-studio-agent-plugin
