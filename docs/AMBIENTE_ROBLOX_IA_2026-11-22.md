@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | Roblox Studio | Aplicativo instalado; indicador MCP Ready verificado anteriormente | Configurado |
 | Roblox Studio Agent Plugin no Codex | 0.2.3, instalado e habilitado | Confirmado |
-| Servidor MCP `Roblox_Studio` | Registrado em `~/.codex/config.toml` | Configurado; teste de ferramentas pelo Codex permanece pendente |
+| Servidor MCP `Roblox_Studio` | Registrado em `~/.codex/config.toml` | Conexão e leitura do Workspace confirmadas pelo Codex |
 | Superpowers | 7.0.1, instalado e habilitado no Codex | Confirmado |
 | Roblox Dev Skill | `~/.agents/skills/roblox-dev-skill/SKILL.md` | Instalado |
 | Roblox Skills (EL4CTEO) | 23 skills individuais em `~/.agents/skills/` | Instaladas |
@@ -22,8 +22,8 @@
 
 1. Reiniciar o **Codex** para ele reconhecer as skills recém-instaladas.
 2. Reiniciar o **Roblox Studio** quando conveniente, para carregar o plugin Rojo; antes disso, salvar o lugar aberto.
-3. Em nova conversa no Codex, pedir: **"Use o MCP Roblox_Studio e liste os objetos do Workspace; não modifique nada."**
-4. Confirmada a conexão, executar o prompt inicial em [`prompts/primeiro-playground-ragdoll.md`](../prompts/primeiro-playground-ragdoll.md).
+3. **Conexão de leitura já confirmada:** Codex identificou Place1 e objetos do Workspace por MCP.
+4. Agora solicitar ao Codex o plano baseado no prompt mestre em [`prompts/primeiro-playground-ragdoll.md`](../prompts/primeiro-playground-ragdoll.md).
 5. **Não iniciar `rojo serve` nem sincronizar sobre um lugar existente sem plano e backup**, pois a sincronização pode modificar a estrutura do jogo.
 
 ## Instalação e manutenção
@@ -35,6 +35,6 @@
 
 ## Observação
 
-Ter um servidor configurado e o indicador "MCP Ready" não é a mesma coisa que validar a chamada de ferramentas pela sessão do Codex. Essa validação de ponta a ponta permanece como próximo teste.
+A comunicação MCP de leitura de ponta a ponta foi confirmada pelo Codex. Escrita, testes de gameplay e sincronização do código ainda não foram validados neste projeto.
 
 O GitHub não recebe commits automaticamente a cada mensagem; atualizar a documentação quando houver nova atividade relevante, mediante acesso confirmado.
