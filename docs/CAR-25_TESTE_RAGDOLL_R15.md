@@ -53,3 +53,7 @@ Sem validação nesta rodada: toque em aparelho ou simulador, multiplayer e reab
 4. Use **Stop** ou **Shift+F5** para encerrar o Play. Para reverter o teste, em modo de edição remova apenas os dois scripts nomeados acima. O botão, o RemoteEvent e os colisores existem só em Play. O portal fica no Workspace.
 
 O usuário informou que executou o teste manual e **aprovou** o ragdoll R15 em 22/11/2026. A fase de experimentos iniciais está encerrada a pedido dele; isso não dispensa testes de qualidade das próximas funcionalidades. A implementação de novas mecânicas ainda depende de autorização. [Registro formal da aprovação](APROVACAO_TESTES_INICIAIS_2026-11-22.md).
+
+## Snapshot após aprovação
+
+Após o teste manual e a aprovação do usuário, o arquivo binário `Place1.rbxl` com portal e ragdoll foi versionado no GitHub em [`studio/Place1.rbxl`](../studio/Place1.rbxl), junto com os [backups anteriores aos testes](../studio/backups/). Os arquivos de código Luau continuam disponíveis em `src/`. A restauração do backup e os cenários multiplayer/toque seguem sem teste próprio.
