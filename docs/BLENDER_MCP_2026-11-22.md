@@ -16,15 +16,16 @@
 
 **Comprovado:** Blender instalado, addon habilitado, servidor `blender` configurado no Codex, socket local respondendo e MCPs anteriores preservados.
 
-**Ainda não comprovado:** o Codex chamar uma ferramenta MCP real (por exemplo, listar os objetos da cena). Por isso, não considerar uma modelagem/teste end-to-end validado até esse passo.
+**Teste de ponta a ponta de leitura confirmado pelo usuário:** o Codex executou uma consulta MCP real à instância Blender 5.3.0 (PID `5836`; addon reportado como 2.0), identificou a cena não salva `Scene` em Modo Objeto, `Cube` ativo e os objetos `Camera`, `Cube` e `Light`, com posições, rotações e propriedades. Nenhuma cena foi modificada. **Ainda não comprovado:** escrita/modelagem, execução de `execute_blender_code` sob modo de segurança, geração externa 3D, exportação e importação no Roblox.
 
-## Como testar no Codex
+## Próxima etapa no Codex (após teste de leitura já validado)
 
-1. Deixe aberta a **segunda** janela do Blender, que iniciou a ponte.
-2. Abra **nova conversa** no Codex para carregar a configuração MCP.
-3. Envie: **"Conecte ao servidor MCP `blender` e liste os objetos da cena, sem alterar nada. Não use o Roblox Studio nesse teste."**
-4. O Blender costuma começar com os objetos Camera, Cube e Light. Confirme o resultado real retornado pelo Codex.
-5. Depois disso, é possível criar modelos 3D originais e exportá-los como GLB/FBX para um processo de importação supervisionado no Roblox Studio.
+1. O teste de listagem de objetos via MCP **já foi concluído**, e não precisa ser repetido sem motivo.
+2. No primeiro MVP ragdoll, prefira Parts e ferramentas nativas do Roblox Studio; **Blender não é dependência**.
+3. Quando algum asset 3D original for necessário, planeje o modelo e peça autorização antes de alterar a cena no Blender. Salve o arquivo `.blend` novo e preservado.
+4. Verifique quais ferramentas de modelagem estão realmente permitidas pelo modo de segurança antes de executar scripts Python; nunca desative proteções automaticamente.
+5. Exporte preferencialmente GLB/FBX, teste a importação no Roblox e documente autoria, malha, escala, colisões e desempenho.
+6. Consulte o [prompt mestre v1.1](../prompts/primeiro-playground-ragdoll.md) e a tarefa [CAR-32](https://linear.app/carloszucchi/issue/CAR-32/preparar-pipeline-de-assets-blender-roblox-studio-futuro).
 
 ## Cuidados
 
