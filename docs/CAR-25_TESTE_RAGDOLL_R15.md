@@ -1,7 +1,7 @@
 # CAR-25 · Teste isolado de ragdoll R15
 
 **Data:** 22/11/2026  
-**Estado:** implementado, testado em Play solo e salvo no Place1 local. A CAR-25 segue em andamento para avaliação do usuário e validações fora do teste isolado.
+**Estado:** implementado, testado em Play solo, salvo no Place1 local e **aprovado pelo usuário após teste manual em 22/11/2026**. O escopo completo de multiplayer/toque continua sem validação.
 
 ## Backup e escopo
 
@@ -52,4 +52,4 @@ Sem validação nesta rodada: toque em aparelho ou simulador, multiplayer e reab
 3. Para o reset manual, ative o ragdoll e use **Esc → Reiniciar personagem** no menu do Roblox. Depois de renascer, teste novamente o movimento e o botão.
 4. Use **Stop** ou **Shift+F5** para encerrar o Play. Para reverter o teste, em modo de edição remova apenas os dois scripts nomeados acima. O botão, o RemoteEvent e os colisores existem só em Play. O portal fica no Workspace.
 
-Aguarda avaliação de Carlos antes de abrir outra etapa.
+O usuário informou que executou o teste manual e **aprovou** o ragdoll R15 em 22/11/2026. A fase de experimentos iniciais está encerrada a pedido dele; isso não dispensa testes de qualidade das próximas funcionalidades. A implementação de novas mecânicas ainda depende de autorização. [Registro formal da aprovação](APROVACAO_TESTES_INICIAIS_2026-11-22.md).
