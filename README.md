@@ -29,5 +29,13 @@ Projeto experimental de desenvolvimento de experiências Roblox com agentes de I
 - Do Not Stop: https://www.roblox.com/pt/games/116779912472448/Do-Not-Stop
 - Throw Food For Animals: https://www.roblox.com/pt/games/120219252362013/Throw-Food-For-Animals
 
+## Gerenciamento de tarefas (Linear)
+
+- [Projeto: Testezinho Roblox — AI Ragdoll Playground](https://linear.app/carloszucchi/project/testezinho-roblox-ai-ragdoll-playground-8cd1127081c2).
+- Criado em 22/11/2026 com três marcos: **M0 — Planejamento aprovado**, **M1 — Protótipo jogável**, **M2 — Testes e entrega técnica**.
+- Foram cadastradas 11 tarefas (`CAR-21` a `CAR-31`): apenas `CAR-21` (validação de leitura MCP) está concluída; o planejamento com Superpowers (`CAR-22`) está como Todo e todo o trabalho de gameplay permanece pendente.
+- O Linear é o acompanhamento de tarefas; o GitHub é a referência para prompts, código e documentação. Cauã ainda não consta como membro do Linear, portanto não recebeu atribuições.
+- Não confundir planejamento cadastrado com código implementado ou funcionalidade testada. Consulte o [prompt mestre](prompts/primeiro-playground-ragdoll.md).
+
 ## Como preservar o contexto
 Registrar decisões técnicas e prompts em commits. Conversas do ChatGPT não geram commits automaticamente: é preciso solicitar a atualização em cada sessão. **Este repositório é público: não salvar tokens, credenciais, arquivos privados ou dados pessoais.**
