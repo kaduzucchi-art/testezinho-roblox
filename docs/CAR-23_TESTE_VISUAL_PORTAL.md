@@ -40,4 +40,4 @@ A documentação oficial do Roblox foi a referência principal. A sessão també
 
 ## Feedback posterior — 22/11/2026
 
-O usuário aprovou o **visual futurista** do portal após vê-lo em imagem e pediu que seja preservado. Em seguida, autorizou um **teste isolado de ragdoll R15** antes da construção da arena completa. A instrução atual para esse teste está no [prompt de ragdoll isolado](../prompts/teste-ragdoll-r15-isolado.md). **Esse teste ainda não foi realizado.** Não remover `MCP_Demo_Temporaria` nem avançar à CAR-24 por conta própria.
+O usuário aprovou o **visual futurista** do portal após vê-lo em imagem e pediu que seja preservado. Em seguida, autorizou um **teste isolado de ragdoll R15** antes da construção da arena completa. A instrução atual para esse teste está no [prompt de ragdoll isolado](../prompts/teste-ragdoll-r15-isolado.md). O teste isolado foi executado posteriormente e confirmou a presença do portal em Play. [Relatório e captura da CAR-25](CAR-25_TESTE_RAGDOLL_R15.md). Não remover `MCP_Demo_Temporaria` nem avançar à CAR-24 por conta própria.
