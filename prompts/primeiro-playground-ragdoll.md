@@ -19,6 +19,13 @@
 
 Não suponha que todas as skills funcionam em qualquer sessão: descubra as disponíveis no ambiente e leia as instruções pertinentes. Use Superpowers (`brainstorming` → design → `writing-plans` → implementação testada → verificação) sem transformar um MVP em arquitetura excessiva. Dê prioridade, quando fizer sentido, às skills `roblox-dev-skill`, `roblox-studio-mcp`, `roblox-luau`, `roblox-physics`, `roblox-ui`, `roblox-security`, `roblox-testing` e `roblox-performance`.
 
+### Documentação atualizada e Context7
+
+- **Fonte principal para APIs do Roblox:** [Roblox Creator Hub](https://create.roblox.com/docs). Use Context7 apenas como **complemento** para consultar bibliotecas/documentação atualizadas quando a fonte adequada estiver disponível.
+- O usuário já possui acesso ao Context7 no ambiente ChatGPT. **Não presumir que o plugin também está habilitado no Codex**: verifique sua disponibilidade na sessão antes de usá-lo.
+- Se o Context7 não estiver disponível no Codex ou não contiver a documentação Roblox necessária, **não interrompa o projeto nem instale nada automaticamente**; use o Creator Hub e registre a limitação.
+- Consulte [a decisão detalhada sobre Context7](../docs/CONTEXT7_NO_DESENVOLVIMENTO.md).
+
 ## 2. Objetivo criativo do MVP
 
 Criar um **playground de ragdoll cartunesco, original, simples e divertido**, inspirado no apelo de jogos de física do Roblox, **sem copiar nomes, assets, mapas, interfaces ou scripts de jogos de terceiros**.
